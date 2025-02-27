@@ -78,7 +78,6 @@ MonoBehaviour:
     enabled: 1
   forceRemoveInternetPermission: 0
   symmetricProjection: 0
-  foveatedRenderingApi: 0
   systemSplashScreen: {fileID: 0}
   optimizeBufferDiscards: 1
   lateLatchingMode: 0
@@ -291,6 +290,7 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature iPhone
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: XR Performance Settings
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.extension.performance_settings
@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Name: MetaQuestTouchPlusControllerProfile Standalone
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: Meta Quest Touch Plus Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestplus
@@ -791,12 +792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
   m_Name: iPhone
   m_EditorClassIdentifier: 
-  features:
-  - {fileID: -4969639462301205073}
+  features: []
   m_renderMode: 1
-  m_autoColorSubmissionMode: 1
-  m_colorSubmissionModes:
-    m_List: 00000000
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
@@ -853,6 +850,7 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature Android
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: XR Performance Settings
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.extension.performance_settings
@@ -1021,6 +1019,7 @@ MonoBehaviour:
   m_Name: MetaQuestTouchPlusControllerProfile Android
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: Meta Quest Touch Plus Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestplus
@@ -1071,7 +1070,6 @@ MonoBehaviour:
   - {fileID: 7979832285529983329}
   - {fileID: -636691906712231106}
   - {fileID: 350006813653207814}
-  - {fileID: -1936919281560672759}
   - {fileID: 3402395600870527678}
   - {fileID: -9033283430427374456}
   - {fileID: 6432130480329936489}
@@ -1080,11 +1078,7 @@ MonoBehaviour:
   - {fileID: -8085592747120232749}
   - {fileID: -4658977054759241166}
   - {fileID: -7814650630653933832}
-  - {fileID: 7282197275081290729}
   m_renderMode: 1
-  m_autoColorSubmissionMode: 1
-  m_colorSubmissionModes:
-    m_List: 00000000
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
@@ -1101,6 +1095,7 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature Standalone
   m_EditorClassIdentifier: 
   m_enabled: 0
+  <failedInitialization>k__BackingField: 0
   nameUi: XR Performance Settings
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.extension.performance_settings
@@ -1168,9 +1163,9 @@ MonoBehaviour:
   - {fileID: 3557292500312512116}
   - {fileID: -9048593596088455664}
   - {fileID: -2180742652110445954}
-  - {fileID: 7867655779806808746}
   - {fileID: 1756701617443760203}
   - {fileID: 4804219573665991350}
+  - {fileID: 7867655779806808746}
   - {fileID: -4980419749921431937}
   - {fileID: -1172652068081258601}
   - {fileID: 8801685486957045280}
@@ -1178,26 +1173,21 @@ MonoBehaviour:
   - {fileID: -4488415361387275800}
   - {fileID: -890528141153733479}
   - {fileID: -8625063132382582363}
-  - {fileID: 6646786135208953652}
   - {fileID: -1563996975432946228}
   - {fileID: 8793153470034053120}
-  - {fileID: 5152987103278753524}
   - {fileID: 7840459773915604734}
   - {fileID: 1694506104878215709}
   - {fileID: -4043528201591897329}
+  - {fileID: -5807766236019338309}
   - {fileID: -8415320714435329043}
   - {fileID: 6888929234291660446}
   - {fileID: -4993774784326517491}
   - {fileID: 435099687966340818}
   - {fileID: -759433931056808163}
+  - {fileID: 5152987103278753524}
   - {fileID: -436943795340788849}
   - {fileID: -8057245497431456264}
-  - {fileID: 3151721043586555355}
-  - {fileID: -5807766236019338309}
   m_renderMode: 1
-  m_autoColorSubmissionMode: 1
-  m_colorSubmissionModes:
-    m_List: 00000000
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
