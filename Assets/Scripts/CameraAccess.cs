@@ -11,21 +11,37 @@ public class CameraAccess : MonoBehaviour
 {
     public RawImage CameraRawImage;
 
-    private ARCameraManager _cameraManager;
+    [SerializeField] private ARCameraManager _cameraManager;
     private Texture2D _cameraTexture;
     private XRCpuImage _lastCpuImage;
+
+    // public void Awake()
+    // {
+    //     _cameraManager = FindFirstObjectByType<ARCameraManager>();
+    //     if (_cameraManager)
+    //     {
+    //         Debug.Log("AR Camera Manager Found");
+    //     }
+    // }
 
     // Start is called before the first frame update
     public void Start()
     {
+        Debug.Log("Camera Access Started");
+        if (_cameraManager)
+        {
+            Debug.Log("AR Camera Manager exist");
+        }
         _cameraManager.frameReceived += OnFrameReceived;
     }
 
     private void OnFrameReceived(ARCameraFrameEventArgs args)
     {
+        Debug.Log("Frame Received");
         _lastCpuImage = new XRCpuImage();
         if (!_cameraManager.TryAcquireLatestCpuImage(out _lastCpuImage))
         {
+            Debug.Log("Cannot get CPU image");
             return;
         }
 
@@ -34,6 +50,8 @@ public class CameraAccess : MonoBehaviour
 
     private unsafe void UpdateCameraTexture(XRCpuImage image)
     {
+
+        Debug.Log("UpdateCameraTexture");
         var format = TextureFormat.RGBA32;
 
         if (_cameraTexture == null || _cameraTexture.width != image.width || _cameraTexture.height != image.height)
